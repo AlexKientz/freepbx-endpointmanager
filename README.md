@@ -1,3 +1,20 @@
+# Fork of FreePBX-EndPoint Manager
+
+### How to remove EndPoint Commercial :
+```
+fwconsole ma delete pms sangomaconnect sangosmartapi
+fwconsole ma delete advanced_recovery restapps
+fwconsole ma delete endpoint
+```
+
+### How to install FreePBX-EndPoint Manager Forked for **NON COMMERCIAL USE** : 
+```
+cd /var/www/html/admin/modules/
+wget https://github.com/AlexKientz/freepbx-endpointmanager/releases/download/Release/V1.0.0.zip
+unzip V1.0.0.zip
+chmod -R 777 endpointman/
+rm V1.0.0.zip
+```
 ```
  ______             _____  ______   __
 |  ____|           |  __ \|  _ \ \ / /
